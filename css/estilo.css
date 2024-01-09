@@ -1,1 +1,9 @@
-/*# sourceMappingURL=estilo.css.map */
+.mapa-pp {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mapa-pp {
+  height: 66vh;
+}/*# sourceMappingURL=estilo.css.map */
