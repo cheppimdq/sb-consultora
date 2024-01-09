@@ -1,9 +1,53 @@
-.mapa-pp {
+.mapa-pp, .banner-pp, .foto-100 {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+body h1 {
+  font-size: inherit;
+}
+
+.foto-100 {
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
 .mapa-pp {
   height: 66vh;
+}
+
+/* WHATSAPP */
+.boton-wp {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  width: 4em;
+  height: 4em;
+  background-color: #128C7E;
+  color: #FAFAFA;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boton-wp i {
+  font-size: 2.2em;
+}
+.boton-wp:hover {
+  background-color: #FAFAFA;
+  color: #128C7E;
 }/*# sourceMappingURL=estilo.css.map */
