@@ -1,5 +1,5 @@
 $carousel-control-color:             white;
-$carousel-control-width:             15%;
+$carousel-control-width:             30%;
 $carousel-control-opacity:           .5;
 $carousel-control-hover-opacity:     .9;
 $carousel-control-transition:        opacity .15s ease;
@@ -13,10 +13,7 @@ $carousel-indicator-active-bg:       white;
 $carousel-indicator-active-opacity:  1;
 $carousel-indicator-transition:      opacity .6s ease;
 
-$carousel-caption-width:             70%;
-$carousel-caption-color:             white;
-$carousel-caption-padding-y:         1.25rem;
-$carousel-caption-spacer:            1.25rem;
+
 
 $carousel-control-icon-width:        2rem;
 
@@ -31,8 +28,34 @@ $carousel-transition:                transform $carousel-transition-duration eas
 $navbar-height: 50px; // Puedes ajustar esto según la altura real de tu barra de navegación
 
 
-.foto-100 {
-    @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
-    height: calc(100vh - #{$navbar-height});
-    overflow: hidden;
-}
+
+
+
+
+    .carousel-item {
+
+        height: calc(100vh - #{$navbar-height});
+
+        img {
+            @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
+        }
+
+        .carousel-caption {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; // Centra los elementos hijos a lo largo del eje principal (vertical en este caso)
+            align-items: flex-start;
+
+            h2 {
+                font-family: map-get($fuente-pp, h2-carousel);
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+

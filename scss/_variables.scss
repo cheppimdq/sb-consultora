@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@700&display=swap');
+
+$fuente-pp: (
+
+    h2-carusel: 'Readex Pro, sans-serif',
+    // h2-carousel: 'Finlandica, sans-serif',
+    
+    // parrafo: 'Comfortaa Thin, arial',
+);
+
 $color-pp: (
     negro: #212121,
     gris-negro: #585858,
@@ -13,3 +24,11 @@ $color-pp: (
     height: auto; 
     object-fit: cover;
 };
+
+%flex-pp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: center; 
+    // align-content: center;
+}

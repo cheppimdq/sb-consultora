@@ -14,12 +14,11 @@
     position: fixed;
     bottom: 5vh;
     right: 5vh;
-    width: 4em;  // Ancho del círculo
-    height: 4em; // Altura del círculo
+    width: 3.8rem;  // Ancho del círculo
+    height: 3.8rem; // Altura del círculo
     background-color: map-get($color-pp, whatsapp);
     color: map-get($color-pp, blanco);
     border-radius: 50%;
-    padding: 0; // Eliminamos el padding
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
     text-decoration: none;
@@ -28,7 +27,7 @@
     justify-content: center;
     
     i {
-        font-size: 2.2em;
+        font-size: 1.8rem;
     }
     
     &:hover {
