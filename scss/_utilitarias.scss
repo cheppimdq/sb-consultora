@@ -1,0 +1,3 @@
+.link-negro { a { @include enlace-pp(negro, gris-negro, gris-medio); } } 
+.link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(gris-medio, blanco, gris-negro); } } 
+.link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco, azul, gris-medio); } }

@@ -1,0 +1,11 @@
+.footer-pp {
+    color: map-get($color-pp, gris-medio);
+    background-color: map-get($color-pp, negro-fuerte);
+    z-index: 1020;
+    .flex-footer {
+        @extend %flex-pp;
+        justify-content: center;
+        align-content: center;
+        height: 16vh;
+    }
+}

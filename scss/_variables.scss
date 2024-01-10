@@ -10,6 +10,7 @@ $fuente-pp: (
 );
 
 $color-pp: (
+    negro-fuerte: #0B0B0B,
     negro: #212121,
     gris-negro: #585858,
     gris-medio: #8E8E8E,
@@ -32,3 +33,22 @@ $color-pp: (
     // justify-content: center; 
     // align-content: center;
 }
+
+@mixin enlace-pp($color-link, $color-hover, $color-activo) {
+
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: map-get($color-pp, $color-link);
+
+    &:hover { color: map-get($color-pp, $color-hover); };
+
+    &.active {
+        color: map-get($color-pp, $color-activo);
+        &:hover { color: map-get($color-pp, $color-hover); };
+    };
+
+    @media screen and (min-width: 640px) {
+        font-size: 1rem;
+    };
+
+};
