@@ -1,61 +1,35 @@
-$carousel-control-color:             white;
-$carousel-control-width:             30%;
-$carousel-control-opacity:           .5;
-$carousel-control-hover-opacity:     .9;
-$carousel-control-transition:        opacity .15s ease;
-
-$carousel-indicator-width:           30px;
-$carousel-indicator-height:          3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer:          3px;
-$carousel-indicator-opacity:         .5;
-$carousel-indicator-active-bg:       white;
-$carousel-indicator-active-opacity:  1;
-$carousel-indicator-transition:      opacity .6s ease;
-
-
-
-$carousel-control-icon-width:        2rem;
-
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
-
-$carousel-transition-duration:       .3s;
-$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
-
-
-
 $navbar-height: 50px; // Puedes ajustar esto según la altura real de tu barra de navegación
 
+.carousel-item {
+    height: calc(100vh - #{$navbar-height});
+    position: relative; // Asegura que la posición relativa sea establecida para que el gradiente se ajuste correctamente
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
 
-
-
-
-
-    .carousel-item {
-
-        height: calc(100vh - #{$navbar-height});
-
-        img {
-            @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
-        }
-
-        .carousel-caption {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; // Centra los elementos hijos a lo largo del eje principal (vertical en este caso)
-            align-items: flex-start;
-
-            h2 {
-                font-family: map-get($fuente-pp, h2-carousel);
-                font-size: 4rem;
-            }
-
-            p {
-                font-size: 2rem;
-            }
-        }
+    img {
+        @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
+        height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
     }
 
+    .carousel-caption {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
+        h2 {
+            font-family: map-get($fuente-pp, h2-carousel);
+            color: map-get($color-pp, blanco);
+            font-size: 3rem;
+            font-weight: bolder;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+        }
+
+        p {
+            color: map-get($color-pp, blanco);
+            font-size: 1rem;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
