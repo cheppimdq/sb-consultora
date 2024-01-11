@@ -12,6 +12,13 @@
   flex-wrap: wrap;
 }
 
+.parallax-contacto {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +84,11 @@ body h1 {
   .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
     font-size: 1rem;
   }
+}
+
+.parallax-contacto {
+  background-image: url("../assets/img/mardel-1.jpg");
+  height: 52vh;
 }
 
 .carousel-item {

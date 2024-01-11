@@ -34,6 +34,13 @@ $color-pp: (
     // align-content: center;
 }
 
+%parallax-pp {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @mixin enlace-pp($color-link, $color-hover, $color-activo) {
 
     font-size: 0.9rem;

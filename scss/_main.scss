@@ -1,12 +1,8 @@
-
 article {
     height: 50vh;
 }
 
-
 .foto-profesional {
-
-
 
     img {
         @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
