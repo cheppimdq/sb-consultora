@@ -2,3 +2,21 @@
 article {
     height: 50vh;
 }
+
+
+.foto-profesional {
+
+
+
+    img {
+        @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
+    }
+
+    .link-negro {
+        @extend %flex-pp;
+        justify-content: center; 
+        align-content: center;
+        background-color: rgba(map-get($color-pp, negro), 0.2); // 0.5 representa el 50% de opacidad
+        width: 100%;
+    }
+}

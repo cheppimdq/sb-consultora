@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@700&display=swap");
-.mapa-pp, .banner-pp, .carousel-item img {
+.mapa-pp, .banner-pp, .foto-profesional img, .carousel-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-pp .flex-footer {
+.footer-pp .flex-footer, .foto-profesional .link-negro, .header-66 .header-42, .header-66 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -107,8 +107,41 @@ body h1 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.header-66 {
+  height: 60vh;
+  justify-content: center;
+  align-content: flex-end;
+}
+.header-66 .header-42 {
+  align-content: flex-end;
+  height: 55vh;
+  background-image: url("../assets/img/piba.jpg"); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0; /* valores de border-radius: parte superior izquierda, parte superior derecha, parte inferior derecha, parte inferior izquierda */
+  overflow: hidden; /* para asegurar que la esquina redondeada sea visible */
+}
+.header-66 .header-42 .header-texto {
+  background-color: #FAFAFA;
+}
+.header-66 .header-42 .header-texto h2 {
+  color: #212121;
+  font-size: 3rem;
+}
+.header-66 .header-42 .header-texto p {
+  color: #212121;
+  font-size: 1rem;
+}
+
 article {
   height: 50vh;
+}
+
+.foto-profesional .link-negro {
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(33, 33, 33, 0.2);
+  width: 100%;
 }
 
 .mapa-pp {

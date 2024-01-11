@@ -7,7 +7,7 @@ $navbar-height: 50px; // Puedes ajustar esto según la altura real de tu barra d
     background-blend-mode: multiply,multiply;
 
     img {
-        @extend %foto-pp; // Asumo que %foto-pp está definido en algún lugar de tu código
+        @extend %foto-pp;
         height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
     }
 
@@ -30,6 +30,40 @@ $navbar-height: 50px; // Puedes ajustar esto según la altura real de tu barra d
             color: map-get($color-pp, blanco);
             font-size: 1rem;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.header-66 {
+    @extend %flex-pp;
+    height: 60vh;
+    justify-content: center; 
+    align-content: flex-end;
+
+    .header-42 {
+        @extend %flex-pp;
+        align-content: flex-end;
+        height: 55vh;
+        background-image: url('../assets/img/piba.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0; /* valores de border-radius: parte superior izquierda, parte superior derecha, parte inferior derecha, parte inferior izquierda */
+        overflow: hidden; /* para asegurar que la esquina redondeada sea visible */
+
+        .header-texto {
+            background-color: map-get($color-pp, blanco);
+
+            h2 {
+                font-family: map-get($fuente-pp, h2-carousel);
+                color: map-get($color-pp, negro);
+                font-size: 3rem;
+            }
+    
+            p {
+                color: map-get($color-pp, negro);
+                font-size: 1rem;
+            }
+
         }
     }
 }
