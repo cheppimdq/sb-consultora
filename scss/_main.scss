@@ -1,24 +1,16 @@
-article { height: 50vh; }
-
 .foto-profesional {
-
     position: relative;
-
     img { @extend %foto-pp; }
-
     .link-blanco  {
-
         position: absolute;
         bottom: 0;
         padding: 0.3rem;
         background-color: rgba(map-get($color-pp, negro), 0.7);
-        
         @extend %flex-pp;
         justify-content: center; /* Puedes ajustar esto según tus necesidades */
         align-items: center; /* Puedes ajustar esto según tus necesidades */
-
         i { color: map-get($color-pp, linkedin); }
-
     }
-
 }
+
+article { height: 50vh; }

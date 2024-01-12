@@ -1,46 +1,18 @@
-%foto-pp {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover;
-};
+// Links
+.link-blanco { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco-1, blanco, blanco-2); } }
+.link-gris { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco-2, blanco, gris); } } // PERFECTO
+.link-negro { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(negro, negro-1, gris); } } 
 
-%flex-pp {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    // justify-content: center; 
-    // align-content: center;
-}
+// Colores de fondo
+.fondo-blanco { background-color: map-get($color-pp, blanco); }
+.fondo-blanco-1 { background-color: map-get($color-pp, blanco-1); }
+.fondo-blanco-2 { background-color: map-get($color-pp, blanco-2); }
+.fondo-gris { background-color: map-get($color-pp, gris); }
+.fondo-negro-2 { background-color: map-get($color-pp, negro-2); }
+.fondo-negro-1 { background-color: map-get($color-pp, negro-1); }
+.fondo-negro { background-color: map-get($color-pp, negro); }
 
-%parallax-pp {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-%parallax-header {
-    height: 52vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    // ESTO SE REPITE HAY QUE RESUMIRLO
-    h2 {
-        font-family: map-get($fuente-pp, h2-carousel);
-        color: map-get($color-pp, blanco);
-        font-size: 3rem;
-        font-weight: bolder;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);;
-    }
-
-    p {
-        color: map-get($color-pp, blanco);
-        font-size: 1rem;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
-    }
-}
+// TODOS LOS PARALLAX
 
 .parallax-derecho {
     @extend %parallax-pp;

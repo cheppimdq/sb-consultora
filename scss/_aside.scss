@@ -1,14 +1,3 @@
-.banner-pp {
-    @extend %foto-pp;
-}
-
-// HAY QUE PONERLE FONDO GRIS POR QUE FUNCIONA COMO FOOTER !!!
-.mapa-pp {
-    @extend %foto-pp;
-    height: 66vh;
-    background-color: map-get($color-pp, negro-1);
-}
-
 /* WHATSAPP */
 .boton-wp { 
     position: fixed;
@@ -39,4 +28,3 @@
         color: map-get($color-pp, whatsapp);
     }
 }
-

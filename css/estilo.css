@@ -1,83 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@700&display=swap");
-.link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #000000;
-}
-.link-negro a:hover, .link-negro .nav-link:hover, .link-negro .nav-link:hover:hover, .link-negro .nav-link.active:hover {
-  color: #333333;
-}
-.link-negro a.active, .link-negro .nav-link.active, .link-negro .nav-link:hover.active, .link-negro .nav-link.active.active {
-  color: #767676;
-}
-.link-negro a.active:hover, .link-negro .nav-link.active:hover, .link-negro .nav-link:hover.active:hover, .link-negro .nav-link.active.active:hover {
-  color: #333333;
-}
-@media screen and (min-width: 640px) {
-  .link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
-    font-size: 1rem;
-  }
-}
-
-.link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #cccccc;
-}
-.link-gris a:hover, .link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover {
-  color: #ffffff;
-}
-.link-gris a.active, .link-gris .nav-link.active, .link-gris .nav-link:hover.active, .link-gris .nav-link.active.active {
-  color: #767676;
-}
-.link-gris a.active:hover, .link-gris .nav-link.active:hover, .link-gris .nav-link:hover.active:hover, .link-gris .nav-link.active.active:hover {
-  color: #ffffff;
-}
-@media screen and (min-width: 640px) {
-  .link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
-    font-size: 1rem;
-  }
-}
-
-.link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #eeeeee;
-}
-.link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
-  color: #ffffff;
-}
-.link-blanco a.active, .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active {
-  color: #cccccc;
-}
-.link-blanco a.active:hover, .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover {
-  color: #ffffff;
-}
-@media screen and (min-width: 640px) {
-  .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
-    font-size: 1rem;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-body nav h1 {
-  font-size: inherit;
-}
-body main {
-  padding: 2.5rem;
-}
-
-.mapa-pp, .banner-pp, .foto-profesional img, .carousel-item img {
+.mapa-pp, .foto-profesional img, .carousel-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -115,6 +39,107 @@ body main {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+body main, body article {
+  padding: 2.5rem;
+}
+
+.link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #eeeeee;
+}
+.link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
+  color: #ffffff;
+}
+.link-blanco a.active, .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active {
+  color: #cccccc;
+}
+.link-blanco a.active:hover, .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover {
+  color: #ffffff;
+}
+@media screen and (min-width: 640px) {
+  .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
+    font-size: 1rem;
+  }
+}
+
+.link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #cccccc;
+}
+.link-gris a:hover, .link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover {
+  color: #ffffff;
+}
+.link-gris a.active, .link-gris .nav-link.active, .link-gris .nav-link:hover.active, .link-gris .nav-link.active.active {
+  color: #767676;
+}
+.link-gris a.active:hover, .link-gris .nav-link.active:hover, .link-gris .nav-link:hover.active:hover, .link-gris .nav-link.active.active:hover {
+  color: #ffffff;
+}
+@media screen and (min-width: 640px) {
+  .link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
+    font-size: 1rem;
+  }
+}
+
+.link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000000;
+}
+.link-negro a:hover, .link-negro .nav-link:hover, .link-negro .nav-link:hover:hover, .link-negro .nav-link.active:hover {
+  color: #333333;
+}
+.link-negro a.active, .link-negro .nav-link.active, .link-negro .nav-link:hover.active, .link-negro .nav-link.active.active {
+  color: #767676;
+}
+.link-negro a.active:hover, .link-negro .nav-link.active:hover, .link-negro .nav-link:hover.active:hover, .link-negro .nav-link.active.active:hover {
+  color: #333333;
+}
+@media screen and (min-width: 640px) {
+  .link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
+    font-size: 1rem;
+  }
+}
+
+.fondo-blanco {
+  background-color: #ffffff;
+}
+
+.fondo-blanco-1 {
+  background-color: #eeeeee;
+}
+
+.fondo-blanco-2 {
+  background-color: #cccccc;
+}
+
+.fondo-gris {
+  background-color: #767676;
+}
+
+.fondo-negro-2 {
+  background-color: #595959;
+}
+
+.fondo-negro-1 {
+  background-color: #333333;
+}
+
+.fondo-negro {
+  background-color: #000000;
+}
+
 .parallax-derecho {
   background-image: url("../assets/img/ley-1.jpg");
 }
@@ -133,6 +158,9 @@ body main {
 
 .nav-negro {
   background-color: #000000;
+}
+.nav-negro h1 {
+  font-size: inherit;
 }
 .nav-negro i {
   color: #cccccc;
@@ -189,10 +217,6 @@ body main {
   font-size: 1rem;
 }
 
-article {
-  height: 50vh;
-}
-
 .foto-profesional {
   position: relative;
 }
@@ -208,9 +232,8 @@ article {
   color: #3b70d8;
 }
 
-.mapa-pp {
-  height: 66vh;
-  background-color: #333333;
+article {
+  height: 50vh;
 }
 
 /* WHATSAPP */
@@ -239,9 +262,12 @@ article {
   color: #128851;
 }
 
+.mapa-pp {
+  height: 66vh;
+}
+
 .footer-negro {
-  background-color: #000000;
-  color: #cccccc;
+  color: #595959;
   z-index: 1020;
 }
 .footer-negro .flex-footer {

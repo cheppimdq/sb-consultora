@@ -1,6 +1,10 @@
+.mapa-pp {
+    @extend %foto-pp;
+    height: 66vh;
+}
+
 .footer-negro {
-    background-color: map-get($color-pp, negro);
-    color: map-get($color-pp, blanco-2); // ACA VA EL MISMO COLOR QUE EL LINK GRIS !!!
+    color: map-get($color-pp, negro-2); // ACA VA EL MISMO COLOR QUE EL LINK GRIS !!!
     z-index: 1020;
     .flex-footer {
         @extend %flex-pp;

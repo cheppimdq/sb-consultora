@@ -5,10 +5,6 @@
 }
 
 body {
+    main, article {padding: 2.5rem; } 
     overflow-x: hidden;
-    
-    nav { h1 {font-size: inherit;} }
-    main {
-        padding: 2.5rem;  // Ajusta el valor según tus necesidades
-    }
 }
