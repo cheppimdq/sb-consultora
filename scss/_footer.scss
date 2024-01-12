@@ -1,6 +1,6 @@
-.footer-pp {
-    color: map-get($color-pp, gris-medio);
-    background-color: map-get($color-pp, negro-fuerte);
+.footer-negro {
+    color: map-get($color-pp, fondo-gris);
+    background-color: map-get($color-pp, fondo-negro);
     z-index: 1020;
     .flex-footer {
         @extend %flex-pp;
