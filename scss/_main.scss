@@ -11,7 +11,7 @@ article { height: 50vh; }
         position: absolute;
         bottom: 0;
         padding: 0.3rem;
-        background-color: rgba(map-get($color-pp, negro-fuerte), 0.7);
+        background-color: rgba(map-get($color-pp, negro), 0.7);
         
         @extend %flex-pp;
         justify-content: center; /* Puedes ajustar esto según tus necesidades */

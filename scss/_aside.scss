@@ -6,7 +6,7 @@
 .mapa-pp {
     @extend %foto-pp;
     height: 66vh;
-    background-color: map-get($color-pp, gris-negro);
+    background-color: map-get($color-pp, negro-1);
 }
 
 /* WHATSAPP */
