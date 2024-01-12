@@ -1,14 +1,21 @@
 article { height: 50vh; }
 
 .foto-profesional {
+
     img { @extend %foto-pp; }
 
-    .link-negro {
-        padding: 0.3rem;
-        @extend %flex-pp;
-        justify-content: start; 
-        align-content: center;
-        i { color: map-get($color-pp, linkedin); }
-        background-color: rgba(map-get($color-pp, negro), 0.6); // 0.5 representa el 50% de opacidad
+    .link-blanco  {
+
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(map-get($color-pp, negro), 0.7); // 0.5 representa el 50% de opacidad
+        text-align: center;
+
+        div { 
+            @extend %flex-pp;
+            i { color: map-get($color-pp, linkedin); }
+        }
+
     }
+
 }
