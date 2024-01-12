@@ -107,12 +107,12 @@ body main {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bolder;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 .parallax-contacto p, .parallax-seguros p, .parallax-contaduria p, .parallax-derecho p {
   color: #ffffff;
   font-size: 1rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 .parallax-derecho {
@@ -155,12 +155,12 @@ body main {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bolder;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .carousel-item .carousel-caption p {
   color: #ffffff;
   font-size: 1rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 .header-66 {
@@ -205,7 +205,7 @@ article {
   align-items: center; /* Puedes ajustar esto según tus necesidades */
 }
 .foto-profesional .link-blanco i {
-  color: #0077B5;
+  color: #3b70d8;
 }
 
 .mapa-pp {
@@ -220,7 +220,7 @@ article {
   right: 5vh;
   width: 3.8rem;
   height: 3.8rem;
-  background-color: #128C7E;
+  background-color: #128851;
   color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -236,7 +236,7 @@ article {
 }
 .boton-wp:hover {
   background-color: #ffffff;
-  color: #128C7E;
+  color: #128851;
 }
 
 .footer-negro {
