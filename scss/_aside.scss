@@ -1,12 +1,12 @@
-
-
 .banner-pp {
     @extend %foto-pp;
 }
 
+// HAY QUE PONERLE FONDO GRIS POR QUE FUNCIONA COMO FOOTER !!!
 .mapa-pp {
     @extend %foto-pp;
     height: 66vh;
+    background-color: map-get($color-pp, gris-negro);
 }
 
 /* WHATSAPP */
@@ -16,24 +16,27 @@
     right: 5vh;
     width: 3.8rem;  // Ancho del círculo
     height: 3.8rem; // Altura del círculo
+
     background-color: map-get($color-pp, whatsapp);
     color: map-get($color-pp, blanco);
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
+    z-index: 1000;
+
     i {
         font-size: 1.8rem;
     }
-    
+
     &:hover {
         background-color: map-get($color-pp, blanco);
         color: map-get($color-pp, whatsapp);
     }
-    
 }
 

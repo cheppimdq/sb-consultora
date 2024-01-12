@@ -6,5 +6,9 @@
 
 body {
     overflow-x: hidden;
-    h1 {font-size: inherit;}
+    
+    nav { h1 {font-size: inherit;} }
+    main {
+        padding: 2.5rem;  // Ajusta el valor según tus necesidades
+    }
 }

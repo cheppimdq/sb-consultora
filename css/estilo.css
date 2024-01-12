@@ -1,37 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@700&display=swap");
-.mapa-pp, .banner-pp, .foto-profesional img, .carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.footer-pp .flex-footer, .foto-profesional .link-negro, .header-66 .header-42, .header-66 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.parallax-contacto {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-body h1 {
-  font-size: inherit;
-}
-
 .link-negro a {
   font-size: 0.9rem;
   text-decoration: none;
@@ -86,16 +54,78 @@ body h1 {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+body nav h1 {
+  font-size: inherit;
+}
+body main {
+  padding: 2.5rem;
+}
+
+.mapa-pp, .banner-pp, .foto-profesional img, .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-pp .flex-footer, .foto-profesional .link-negro, .header-66 .header-42, .header-66 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.parallax-contacto, .parallax-seguros, .parallax-contaduria, .parallax-derecho {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-contacto, .parallax-seguros, .parallax-contaduria, .parallax-derecho {
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.parallax-contacto h2, .parallax-seguros h2, .parallax-contaduria h2, .parallax-derecho h2 {
+  color: #FAFAFA;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.parallax-contacto p, .parallax-seguros p, .parallax-contaduria p, .parallax-derecho p {
+  color: #FAFAFA;
+  font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.parallax-derecho {
+  background-image: url("../assets/img/ley-1.jpg");
+}
+
+.parallax-contaduria {
+  background-image: url("../assets/img/dolar-1.jpg");
+}
+
+.parallax-seguros {
+  background-image: url("../assets/img/trabajo-1.jpg");
+}
+
 .parallax-contacto {
   background-image: url("../assets/img/mardel-1.jpg");
-  height: 52vh;
 }
 
 .carousel-item {
   height: calc(100vh - 50px);
-  position: relative;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
-  background-blend-mode: multiply, multiply;
 }
 .carousel-item img {
   height: 100%;
@@ -150,14 +180,18 @@ article {
 }
 
 .foto-profesional .link-negro {
-  justify-content: center;
+  padding: 0.3rem;
+  justify-content: start;
   align-content: center;
-  background-color: rgba(33, 33, 33, 0.2);
-  width: 100%;
+  background-color: rgba(33, 33, 33, 0.6);
+}
+.foto-profesional .link-negro i {
+  color: #0077B5;
 }
 
 .mapa-pp {
   height: 66vh;
+  background-color: #585858;
 }
 
 /* WHATSAPP */
@@ -176,6 +210,7 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 .boton-wp i {
   font-size: 1.8rem;

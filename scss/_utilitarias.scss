@@ -1,10 +1,67 @@
-.link-negro { a { @include enlace-pp(negro, gris-negro, gris-medio); } } 
-.link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(gris-medio, blanco, gris-negro); } } 
-.link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco, azul, gris-medio); } }
+%foto-pp {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+};
+
+%flex-pp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: center; 
+    // align-content: center;
+}
+
+%parallax-pp {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%parallax-header {
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // ESTO SE REPITE HAY QUE RESUMIRLO
+    h2 {
+        font-family: map-get($fuente-pp, h2-carousel);
+        color: map-get($color-pp, blanco);
+        font-size: 3rem;
+        font-weight: bolder;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+    }
+
+    p {
+        color: map-get($color-pp, blanco);
+        font-size: 1rem;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.parallax-derecho {
+    @extend %parallax-pp;
+    @extend %parallax-header;
+    background-image: url("../assets/img/ley-1.jpg");
+}
+
+.parallax-contaduria {
+    @extend %parallax-pp;
+    @extend %parallax-header;
+    background-image: url("../assets/img/dolar-1.jpg");
+}
+
+.parallax-seguros {
+    @extend %parallax-pp;
+    @extend %parallax-header;
+    background-image: url("../assets/img/trabajo-1.jpg");
+}
 
 .parallax-contacto {
     @extend %parallax-pp;
+    @extend %parallax-header;
     background-image: url("../assets/img/mardel-1.jpg");
-    height: 52vh;
 }
-
