@@ -1,13 +1,10 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@700&display=swap");
-.mapa-pp, .foto-profesional img, .carousel-item img {
+.mapa-pp, .contenedor-profesional .foto-profesional img, .carousel-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .foto-profesional .link-blanco, .header-66 .header-42, .header-66 {
+.footer-negro .flex-footer, .footer-negro, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .header-66 .header-42, .header-66 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -130,10 +127,12 @@ body main, body article {
 
 .fondo-negro-2 {
   background-color: #595959;
+  color: #eeeeee;
 }
 
 .fondo-negro-1 {
   background-color: #333333;
+  color: #767676;
 }
 
 .fondo-negro {
@@ -156,9 +155,6 @@ body main, body article {
   background-image: url("../assets/img/mardel-1.jpg");
 }
 
-.nav-negro {
-  background-color: #000000;
-}
 .nav-negro h1 {
   font-size: inherit;
 }
@@ -217,23 +213,25 @@ body main, body article {
   font-size: 1rem;
 }
 
-.foto-profesional {
-  position: relative;
+.contenedor-profesional {
+  justify-content: space-between;
+  align-items: center;
 }
-.foto-profesional .link-blanco {
+.contenedor-profesional .foto-profesional {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-profesional .foto-profesional .link-blanco {
   position: absolute;
   bottom: 0;
   padding: 0.3rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center; /* Puedes ajustar esto según tus necesidades */
-  align-items: center; /* Puedes ajustar esto según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
 }
-.foto-profesional .link-blanco i {
+.contenedor-profesional .foto-profesional .link-blanco i {
   color: #3b70d8;
-}
-
-article {
-  height: 50vh;
 }
 
 /* WHATSAPP */
@@ -267,8 +265,11 @@ article {
 }
 
 .footer-negro {
+  height: 42vh;
   color: #595959;
   z-index: 1020;
+  justify-content: center;
+  align-content: center;
 }
 .footer-negro .flex-footer {
   justify-content: center;

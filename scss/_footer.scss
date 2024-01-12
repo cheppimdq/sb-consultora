@@ -4,8 +4,12 @@
 }
 
 .footer-negro {
+    height: 42vh;
     color: map-get($color-pp, negro-2); // ACA VA EL MISMO COLOR QUE EL LINK GRIS !!!
     z-index: 1020;
+    @extend %flex-pp;
+    justify-content: center;
+    align-content: center;
     .flex-footer {
         @extend %flex-pp;
         justify-content: center;

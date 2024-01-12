@@ -1,16 +1,25 @@
-.foto-profesional {
-    position: relative;
-    img { @extend %foto-pp; }
-    .link-blanco  {
-        position: absolute;
-        bottom: 0;
-        padding: 0.3rem;
-        background-color: rgba(map-get($color-pp, negro), 0.7);
+
+// Div perfil profesional - Puede ir en main como section o directamente como article
+.contenedor-profesional {
+    @extend %flex-pp;
+    justify-content: space-between; // Queda perfecto !!!
+    align-items: center;
+
+    .foto-profesional {
+        position: relative;
         @extend %flex-pp;
-        justify-content: center; /* Puedes ajustar esto según tus necesidades */
-        align-items: center; /* Puedes ajustar esto según tus necesidades */
-        i { color: map-get($color-pp, linkedin); }
+        justify-content: center; // Queda perfecto !!!
+        align-items: center;
+        img { @extend %foto-pp; }
+        .link-blanco  {
+            position: absolute;
+            bottom: 0;
+            padding: 0.3rem;
+            background-color: rgba(map-get($color-pp, negro), 0.6);
+            @extend %flex-pp;
+            justify-content: center;
+            align-items: center;
+            i { color: map-get($color-pp, linkedin); }
+        }
     }
 }
-
-article { height: 50vh; }
