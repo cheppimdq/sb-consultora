@@ -1,6 +1,7 @@
-$navbar-height: 50px; // Puedes ajustar esto según la altura real de tu barra de navegación
-
 .nav-negro {
-    h1 {font-size: inherit;}
+    height: 9vh;
+    h1 {
+        font-size: inherit;
+    }
     i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
 }

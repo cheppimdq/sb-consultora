@@ -7,7 +7,7 @@
     height: 3.8rem; // Altura del círculo
 
     background-color: map-get($color-pp, whatsapp);
-    color: map-get($color-pp, blanco);
+    color: map-get($color-pp, blanco-1);
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
@@ -24,7 +24,7 @@
     }
 
     &:hover {
-        background-color: map-get($color-pp, blanco);
+        background-color: map-get($color-pp, blanco-1);
         color: map-get($color-pp, whatsapp);
     }
 }

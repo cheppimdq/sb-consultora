@@ -13,6 +13,20 @@
 
 .fondo-gris { background-color: map-get($color-pp, gris); }
 
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.fadeInDown {
+    animation: fadeInDown 1s ease;
+}
+
 .fondo-negro-2 { 
     background-color: map-get($color-pp, negro-2);
     color: map-get($color-pp, blanco-1);
@@ -30,7 +44,7 @@
 .parallax-derecho {
     @extend %parallax-pp;
     @extend %parallax-header;
-    background-image: url("../assets/img/ley-1.jpg");
+    background-image: url("../assets/img/ley-2.jpg");
 }
 
 .parallax-contaduria {

@@ -125,6 +125,20 @@ body main, body article {
   background-color: #767676;
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  animation: fadeInDown 1s ease;
+}
+
 .fondo-negro-2 {
   background-color: #595959;
   color: #eeeeee;
@@ -140,7 +154,7 @@ body main, body article {
 }
 
 .parallax-derecho {
-  background-image: url("../assets/img/ley-1.jpg");
+  background-image: url("../assets/img/ley-2.jpg");
 }
 
 .parallax-contaduria {
@@ -155,6 +169,9 @@ body main, body article {
   background-image: url("../assets/img/mardel-1.jpg");
 }
 
+.nav-negro {
+  height: 9vh;
+}
 .nav-negro h1 {
   font-size: inherit;
 }
@@ -163,7 +180,7 @@ body main, body article {
 }
 
 .carousel-item {
-  height: calc(100vh - 50px);
+  height: 91vh;
 }
 .carousel-item img {
   height: 100%;
@@ -180,6 +197,7 @@ body main, body article {
   font-size: 3rem;
   font-weight: bolder;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeInDown 1s ease;
 }
 .carousel-item .carousel-caption p {
   color: #ffffff;
@@ -242,7 +260,7 @@ body main, body article {
   width: 3.8rem;
   height: 3.8rem;
   background-color: #128851;
-  color: #ffffff;
+  color: #eeeeee;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
@@ -256,7 +274,7 @@ body main, body article {
   font-size: 1.8rem;
 }
 .boton-wp:hover {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   color: #128851;
 }
 

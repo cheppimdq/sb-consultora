@@ -1,5 +1,5 @@
 .carousel-item {
-    height: calc(100vh - #{$navbar-height});
+    height: 91vh;
 
     img {
         @extend %foto-pp;
@@ -19,6 +19,8 @@
             font-size: 3rem;
             font-weight: bolder;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeInDown 1s ease;
+
         }
 
         p {
