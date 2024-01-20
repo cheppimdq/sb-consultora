@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
 .mapa-pp, .contenedor-profesional .foto-profesional img, .carousel-item img {
   width: 100%;
@@ -170,9 +171,6 @@ body main, body article {
   background-image: url("../assets/img/mardel-1.jpg");
 }
 
-.nav-negro {
-  height: 9vh;
-}
 .nav-negro h1 {
   font-size: inherit;
 }
@@ -181,7 +179,7 @@ body main, body article {
 }
 
 .carousel-item {
-  height: 91vh;
+  height: calc(100vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
 }
 .carousel-item img {
   height: 100%;

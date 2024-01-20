@@ -1,6 +1,11 @@
+.nav-negro {
+    h1 { font-size: inherit; }
+    i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
+}
+
 // HEADER DEL INDEX
 .carousel-item {
-    height: 91vh;
+    height: calc(100vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
 
     img {
         @extend %foto-pp;
