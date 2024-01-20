@@ -1,10 +1,12 @@
+.nav-negro {
+    h1 { font-size: inherit; }
+    i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
+}
+
 // HEADER DEL INDEX
 .carousel-item {
-    height: 91vh;
-
     img {
         @extend %foto-pp;
-        height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
     }
 
     .carousel-caption {

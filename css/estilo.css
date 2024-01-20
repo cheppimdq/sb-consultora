@@ -170,9 +170,6 @@ body main, body article {
   background-image: url("../assets/img/mardel-1.jpg");
 }
 
-.nav-negro {
-  height: 9vh;
-}
 .nav-negro h1 {
   font-size: inherit;
 }
@@ -180,12 +177,6 @@ body main, body article {
   color: #cccccc;
 }
 
-.carousel-item {
-  height: 91vh;
-}
-.carousel-item img {
-  height: 100%;
-}
 .carousel-item .carousel-caption {
   height: 100%;
   display: flex;
