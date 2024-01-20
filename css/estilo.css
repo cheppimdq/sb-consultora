@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
 .mapa-pp, .contenedor-profesional .foto-profesional img, .carousel-item img {
   width: 100%;
   height: auto;
@@ -45,23 +46,39 @@
 body {
   overflow-x: hidden;
 }
+body a {
+  text-decoration: none;
+}
 body main, body article {
   padding: 2.5rem;
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  animation: fadeInDown 1s ease;
+}
+
 .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #eeeeee;
+  font-size: 1rem;
+  color: #ffffff;
 }
 .link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
-  color: #ffffff;
+  color: #eeeeee;
 }
 .link-blanco a.active, .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active {
-  color: #cccccc;
+  color: #767676;
 }
 .link-blanco a.active:hover, .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover {
-  color: #ffffff;
+  color: #eeeeee;
 }
 @media screen and (min-width: 640px) {
   .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
@@ -70,8 +87,7 @@ body main, body article {
 }
 
 .link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
-  font-size: 0.9rem;
-  text-decoration: none;
+  font-size: 1rem;
   color: #cccccc;
 }
 .link-gris a:hover, .link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover {
@@ -90,8 +106,7 @@ body main, body article {
 }
 
 .link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
-  font-size: 0.9rem;
-  text-decoration: none;
+  font-size: 1rem;
   color: #000000;
 }
 .link-negro a:hover, .link-negro .nav-link:hover, .link-negro .nav-link:hover:hover, .link-negro .nav-link.active:hover {
@@ -123,20 +138,6 @@ body main, body article {
 
 .fondo-gris {
   background-color: #767676;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fadeInDown {
-  animation: fadeInDown 1s ease;
 }
 
 .fondo-negro-2 {
@@ -205,6 +206,54 @@ body main, body article {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
 .header-66 {
   height: 60vh;
   justify-content: center;

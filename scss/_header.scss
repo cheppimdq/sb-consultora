@@ -1,3 +1,4 @@
+// HEADER DEL INDEX
 .carousel-item {
     height: 91vh;
 
@@ -29,6 +30,29 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
         }
     }
+}
+
+// HEADER SECCIONES
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
 }
 
 // Este es el de seguros superpuesto

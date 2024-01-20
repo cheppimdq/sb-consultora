@@ -5,6 +5,7 @@
 }
 
 body {
-    main, article {padding: 2.5rem; } 
+    a { text-decoration: none; } // si se saca de aca, volver a meter en @mixin enlace-pp
+    main, article { padding: 2.5rem; } 
     overflow-x: hidden;
 }
