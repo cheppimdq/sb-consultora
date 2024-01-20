@@ -20,40 +20,18 @@
             font-size: 3rem;
             font-weight: bolder;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-            animation: fadeInDown 1s ease;
-
+            // BUSCAR BUENAS ANIMACIONES YA ESTA TODO EL JS PERFECTO
         }
 
         p {
             color: map-get($color-pp, blanco);
             font-size: 1rem;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+            // BUSCAR BUENAS ANIMACIONES YA ESTA TODO EL JS PERFECTO
         }
     }
 }
 
-// HEADER SECCIONES
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-
-@keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-}
-
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
 
 // Este es el de seguros superpuesto
 .header-66 {

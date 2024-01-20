@@ -198,7 +198,6 @@ body main, body article {
   font-size: 3rem;
   font-weight: bolder;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-  animation: fadeInDown 1s ease;
 }
 .carousel-item .carousel-caption p {
   color: #ffffff;
@@ -206,54 +205,6 @@ body main, body article {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
-@keyframes showup {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes slidein {
-  0% {
-    margin-left: -800px;
-  }
-  20% {
-    margin-left: -800px;
-  }
-  35% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    width: 0px;
-  }
-  20% {
-    opacity: 1;
-    width: 0px;
-  }
-  30% {
-    width: 355px;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    width: 355px;
-  }
-}
 .header-66 {
   height: 60vh;
   justify-content: center;
