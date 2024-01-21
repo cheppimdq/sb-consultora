@@ -1,9 +1,30 @@
+//
+
+.foto-cortada {
+
+    img {
+        @extend %foto-pp;
+    }
+}
+
+.start-pp {
+    @extend %flex-pp;
+    align-items: start;
+}
+
+.columna-pp {
+    @extend %flex-pp;
+    flex-direction: column;
+    padding: 1rem;
+    img { @extend %foto-pp; }
+}
 
 // Div perfil profesional - Puede ir en main como section o directamente como article
 .contenedor-profesional {
     @extend %flex-pp;
     justify-content: space-between; // Queda perfecto !!!
     align-items: center;
+    overflow-x: hidden; // esto va aca por que es un contenedor de una animacion AOS
 
     .foto-profesional {
         position: relative;
