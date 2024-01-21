@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@700&display=swap');
 
 $fuente-pp: (
-    h2-carusel: 'Readex Pro, sans-serif',
+    // h2-carusel: 'Readex Pro, sans-serif',
     // h2-carousel: 'Finlandica, sans-serif',
     // parrafo: 'Comfortaa Thin, arial',
 );
@@ -52,27 +52,4 @@ $color-pp: (
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-%parallax-header { // SI TODOS LOS PARALLAX VAN A SER IGUALES RESUMIRLO CON LO ANTERIOY Y PASAR A >> .parallax-header
-    height: 52vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    // ESTO SE REPITE HAY QUE RESUMIRLO
-    h2 {
-        font-family: map-get($fuente-pp, h2-carousel);
-        color: map-get($color-pp, blanco);
-        font-size: 3rem;
-        font-weight: bolder;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);;
-    }
-
-    p {
-        color: map-get($color-pp, blanco);
-        font-size: 1rem;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
-    }
 }

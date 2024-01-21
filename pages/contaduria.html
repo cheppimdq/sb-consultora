@@ -11,7 +11,7 @@
         <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/estilo.css"> <!-- SASS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
 
     </head>
@@ -72,7 +72,6 @@
             </div>
         </article>
 
-
         <article class="fondo-gris">
             <div class="container">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -80,10 +79,9 @@
             </div>
         </article>
 
-
+        <!-- PERFIL PROFESIONAL -->
         <article class="fondo-negro-2"> 
             <div class="container">
-
                 <!-- Div perfil profesional puede ir aca o dentro de main como section -->
                 <div class="contenedor-profesional">
                     <div class="col-sm-5 col-md-3" data-aos="zoom-in"> 
@@ -100,54 +98,48 @@
                         <p>Voluptas vitae, qui saepe totam molestiae perspiciatis quia beatae animi blanditiis odio accusamus cupiditate dignissimos accusantium voluptatum! Ipsum consequatur quam voluptas dolores!</p>
                     </div>
                 </div>
-
             </div>
         </article>
 
+        <!-- INFO LEGAL DEL PROFESIONAL -->
         <article class="fondo-negro-1">
             <div class="container">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <h5>Informacion legal del profesional</h5>
                 <p>Earum enim voluptatem ea distinctio dolor nam aperiam minus nisi voluptates nulla, vitae in temporibus? Perspiciatis enim, deserunt obcaecati repudiandae deleniti natus.</p>
             </div>
         </article>
 
-        <div class="container"> <!-- WHATSAPP -->
+        <aside class="container"> <!-- WHATSAPP -->
             <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492235273928" target="_blank">
                 <i class="bi bi-whatsapp"></i>
             </a>
-        </div>
+        </aside>
 
-        <footer class="container-fluid fondo-negro footer-negro link-gris"> <!-- DERECHOS, LEGALES, CONTACTO -->
-            <div class="row">
-                <div class="col-sm-12 col-md-7 flex-footer">
-                    <ul class="nav link-gris">
-                        <li class="list-inline-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="list-inline-item"><a class="nav-link" href="./derecho.html">Derecho</a></li>
-                        <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="#">Contaduría</a></li>
-                        <li class="list-inline-item"><a class="nav-link" href="./seguros.html">Seguros</a></li>
-                        <li class="list-inline-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-5 flex-footer">
-                    <ul class="nav link-gris">
-                        <li class="list-inline-item"><a class="nav-link" href="https://www.facebook.com/-"><i class="bi bi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a class="nav-link" href="https://twitter.com/-"><i class="bi bi-twitter-x"></i></a></li>
-                        <li class="list-inline-item"><a class="nav-link" href="https://www.instagram.com/-"><i class="bi bi-instagram"></i></a></li>
-                        <li class="list-inline-item"><a class="nav-link" href="https://www.linkedin.com/company/-"><i class="bi bi-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 flex-footer">                
-                    <h6>SB Consultora 2024 &copy; Todos los derechos reservados.</h6>
-                </div>
+        <footer class="container-fluid"> <!-- navegación, links y derechos -->
+            <div class="row footer-negro link-gris">
+                <ul class="nav col-sm-12 col-md-7 flex-footer">
+                    <li class="list-inline-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./derecho.html">Derecho</a></li>
+                    <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="#">Contaduría</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./seguros.html">Seguros</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+                <ul class="nav col-sm-12 col-md-5 flex-footer">
+                    <li class="list-inline-item"><a class="nav-link" href="https://www.facebook.com/-"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="https://twitter.com/-"><i class="bi bi-twitter-x"></i></a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="https://www.instagram.com/-"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="https://www.linkedin.com/company/-"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+                <h6 class="col-sm-12 flex-footer">2024 &copy; SB Consultora</h6>
             </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-nvAa0n0iinX5PJq0dzl+hfiArCZ3mDUmIkI1Mwsud1EE5S/n6ZgJugJyAMV2E9t6" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        <script src="./js/app.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <script src="./js/app.js"></script>
 
     </body>
 
