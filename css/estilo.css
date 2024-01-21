@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap");
-.mapa-pp, .contenedor-profesional .foto-profesional img, .carousel-item img {
+.mapa-pp, .video-aside, .contenedor-profesional .foto-profesional img, .carousel-item img, .carousel-item video {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .footer-negro, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .header-66 .header-42, .header-66 {
+.footer-negro .flex-footer, .footer-negro, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -52,20 +52,6 @@ body a {
 }
 body main, body article {
   padding: 2.5rem;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fadeInDown {
-  animation: fadeInDown 1s ease;
 }
 
 .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
@@ -181,7 +167,7 @@ body main, body article {
 .carousel-item {
   height: calc(100vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
 }
-.carousel-item img {
+.carousel-item img, .carousel-item video {
   height: 100%;
 }
 .carousel-item .carousel-caption {
@@ -196,86 +182,11 @@ body main, body article {
   font-size: 3rem;
   font-weight: bolder;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-  animation: fadeInDown 1s ease;
 }
 .carousel-item .carousel-caption p {
   color: #ffffff;
   font-size: 1rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-}
-
-@keyframes showup {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes slidein {
-  0% {
-    margin-left: -800px;
-  }
-  20% {
-    margin-left: -800px;
-  }
-  35% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    width: 0px;
-  }
-  20% {
-    opacity: 1;
-    width: 0px;
-  }
-  30% {
-    width: 355px;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    width: 355px;
-  }
-}
-.header-66 {
-  height: 60vh;
-  justify-content: center;
-  align-content: flex-end;
-}
-.header-66 .header-42 {
-  align-content: flex-end;
-  height: 55vh;
-  background-image: url("../assets/img/piba.jpg"); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px 15px 0 0; /* valores de border-radius: parte superior izquierda, parte superior derecha, parte inferior derecha, parte inferior izquierda */
-  overflow: hidden; /* para asegurar que la esquina redondeada sea visible */
-}
-.header-66 .header-42 .header-texto {
-  background-color: #ffffff;
-}
-.header-66 .header-42 .header-texto h2 {
-  color: #000000;
-  font-size: 3rem;
-}
-.header-66 .header-42 .header-texto p {
-  color: #000000;
-  font-size: 1rem;
 }
 
 .contenedor-profesional {
@@ -297,6 +208,10 @@ body main, body article {
 }
 .contenedor-profesional .foto-profesional .link-blanco i {
   color: #3b70d8;
+}
+
+.video-aside {
+  height: 50vh;
 }
 
 /* WHATSAPP */

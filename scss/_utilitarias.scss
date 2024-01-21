@@ -1,18 +1,3 @@
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fadeInDown {
-    animation: fadeInDown 1s ease;
-}
-
 // LINKS
 .link-blanco { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco, blanco-1, gris); } }
 .link-gris { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco-2, blanco, gris); } } // funcionando en el nav

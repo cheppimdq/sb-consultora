@@ -1,3 +1,10 @@
+// VIDEO ANCHO
+.video-aside {
+    height: 50vh;
+    @extend %foto-pp;
+}
+
+
 /* WHATSAPP */
 .boton-wp { 
     position: fixed;

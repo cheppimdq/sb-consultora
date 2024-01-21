@@ -7,7 +7,7 @@
 .carousel-item {
     height: calc(100vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
 
-    img {
+    img, video {
         @extend %foto-pp;
         height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
     }
@@ -25,72 +25,12 @@
             font-size: 3rem;
             font-weight: bolder;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-            animation: fadeInDown 1s ease;
-
         }
 
         p {
             color: map-get($color-pp, blanco);
             font-size: 1rem;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-        }
-    }
-}
-
-// HEADER SECCIONES
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-
-@keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-}
-
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
-
-// Este es el de seguros superpuesto
-.header-66 {
-    @extend %flex-pp;
-    height: 60vh;
-    justify-content: center; 
-    align-content: flex-end;
-
-    .header-42 {
-        @extend %flex-pp;
-        align-content: flex-end;
-        height: 55vh;
-        background-image: url('../assets/img/piba.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0; /* valores de border-radius: parte superior izquierda, parte superior derecha, parte inferior derecha, parte inferior izquierda */
-        overflow: hidden; /* para asegurar que la esquina redondeada sea visible */
-
-        .header-texto {
-            background-color: map-get($color-pp, blanco);
-
-            h2 {
-                font-family: map-get($fuente-pp, h2-carousel);
-                color: map-get($color-pp, negro);
-                font-size: 3rem;
-            }
-    
-            p {
-                color: map-get($color-pp, negro);
-                font-size: 1rem;
-            }
-
         }
     }
 }
