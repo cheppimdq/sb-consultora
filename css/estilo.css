@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.mapa-pp, .contenedor-profesional .foto-profesional img, .columna-pp img, .foto-cortada img, .carousel-item img, .carousel-item video {
+.mapa-pp, .contenedor-profesional .foto-profesional img, .columna-pp img, .foto-cortada img, .carousel-item img, .carousel-item video, .foto-pp {
   width: 100%;
   height: auto;
   object-fit: cover;
