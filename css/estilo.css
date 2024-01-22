@@ -202,7 +202,10 @@ body main, body article {
 }
 
 .start-pp {
-  align-items: start;
+  align-items: end;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
 }
 
 .columna-pp {
