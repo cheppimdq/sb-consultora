@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.mapa-pp, .contenedor-profesional .foto-profesional img, .columna-pp img, .foto-cortada img, .carousel-item img, .carousel-item video, .foto-pp {
+.mapa-pp, .contenedor-profesional .foto-profesional img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -31,7 +31,8 @@ body a {
   text-decoration: none;
 }
 body main, body article {
-  padding: 2.5rem;
+  margin: 3rem;
+  padding: 3rem;
 }
 
 .animacion-pp {
@@ -202,15 +203,16 @@ body main, body article {
 }
 
 .start-pp {
-  align-items: end;
+  align-items: start;
   justify-content: space-evenly;
-  align-items: center;
+  align-content: space-around;
   overflow: hidden;
+  margin: 1.25rem;
+  padding: 1.25rem;
 }
 
 .columna-pp {
   flex-direction: column;
-  padding: 1rem;
 }
 .contenedor-profesional {
   justify-content: space-between;

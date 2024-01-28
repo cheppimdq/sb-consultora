@@ -3,7 +3,6 @@
     i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
 }
 
-
 .altura-index { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
 
 .altura-seguros { height: calc(80vh - 56px); } // estas alturas con las del carousel item
