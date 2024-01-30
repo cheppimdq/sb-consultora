@@ -1,4 +1,10 @@
 // FLEXIBLES
+.columna-pp { // integrar hay que sacarlo pero ahora sirve para los articulos del footer index.html
+    @extend %columna-pp;
+    img { @extend %foto-pp; }
+
+}
+
 .center-pp {
     @extend %flex-pp;
     align-items: center;
@@ -61,9 +67,7 @@
     }
 }
 
-
-
-// Div perfil profesional - Puede ir en main como section o directamente como article
+// DIV PERFIL PROFESIONAL - Puede ir en main como section o directamente como article
 .contenedor-profesional {
     @extend %flex-pp;
     justify-content: space-between; // Queda perfecto !!!

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.mapa-pp, .contenedor-profesional .foto-profesional img, .tarjeta-contenedor .tarjeta-izquierda img, .start-pp img, .center-pp img, .carousel-item img, .carousel-item video, .foto-pp {
+.mapa-pp, .contenedor-profesional .foto-profesional img, .tarjeta-contenedor .tarjeta-izquierda img, .start-pp img, .center-pp img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 }
 
-.tarjeta-contenedor .tarjeta-derecha {
+.tarjeta-contenedor .tarjeta-derecha, .columna-pp {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
