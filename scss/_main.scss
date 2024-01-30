@@ -1,8 +1,7 @@
 // FLEXIBLES
 .columna-pp { // integrar hay que sacarlo pero ahora sirve para los articulos del footer index.html
     @extend %columna-pp;
-    img { @extend %foto-pp; }
-
+        img { @extend %foto-pp; }
 }
 
 .center-pp {
@@ -54,10 +53,8 @@
             width: 100%;
             height: calc(50% - .75rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
             img {
-                height: auto;                
-                width: 33%;
-                margin: 1.25rem;
-                padding: 1.25rem;
+                margin: .5rem;
+                padding: .5rem;
             }
         }
     }
