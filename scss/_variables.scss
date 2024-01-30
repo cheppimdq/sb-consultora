@@ -47,6 +47,12 @@ $color-pp: (
     // align-content: center;
 }
 
+%columna-pp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+};
+
 %parallax-pp {
     background-attachment: fixed;
     background-position: center;

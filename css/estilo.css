@@ -1,13 +1,19 @@
 @charset "UTF-8";
-.mapa-pp, .contenedor-profesional .foto-profesional img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
+.mapa-pp, .contenedor-profesional .foto-profesional img, .tarjeta-contenedor .tarjeta-izquierda img, .start-pp img, .center-pp img, .carousel-item img, .carousel-item video, .foto-pp {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .columna-pp, .start-pp {
+.footer-negro .flex-footer, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-pp, .center-pp {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tarjeta-contenedor .tarjeta-derecha {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -202,26 +208,55 @@ body main, body article {
   background-image: url("../assets/img/mardel-1.jpg");
 }
 
-.alto-flex {
+.center-pp {
   align-items: center;
   justify-content: space-evenly;
   align-content: space-evenly;
   margin: 1.25rem;
   padding: 1.25rem;
+  gap: 1.5rem;
 }
-
 .start-pp {
   align-items: start;
   justify-content: space-evenly;
   align-content: space-around;
-  overflow: hidden;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  gap: 1.5rem;
+}
+.tarjeta-contenedor {
+  display: flex;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  gap: 1.5rem;
+}
+.tarjeta-contenedor .tarjeta-izquierda {
+  width: calc(50% - 0.75rem);
+  gap: 1.5rem;
+}
+.tarjeta-contenedor .tarjeta-izquierda img {
+  max-height: calc(50% + 0.75rem);
+}
+.tarjeta-contenedor .tarjeta-derecha {
+  width: calc(50% - 0.75rem);
+  gap: 1.5rem;
+}
+.tarjeta-contenedor .tarjeta-derecha .tarjeta-arriba, .tarjeta-contenedor .tarjeta-derecha .tarjeta-abajo {
+  display: flex;
+  width: 100%;
+  height: calc(50% - 0.75rem);
+}
+.tarjeta-contenedor .tarjeta-derecha .tarjeta-arriba img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-abajo img {
+  height: auto;
+  width: 33%;
   margin: 1.25rem;
   padding: 1.25rem;
 }
-
-.columna-pp {
-  flex-direction: column;
+.tarjeta-contenedor h5, .tarjeta-contenedor p {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
+
 .contenedor-profesional {
   justify-content: space-between;
   align-items: center;

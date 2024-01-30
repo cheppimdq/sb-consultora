@@ -1,10 +1,13 @@
-//
-.alto-flex {
+// FLEXIBLES
+.center-pp {
+    @extend %flex-pp;
     align-items: center;
     justify-content: space-evenly;
     align-content: space-evenly;
     margin: 1.25rem;
     padding: 1.25rem;
+    gap: 1.5rem;
+    img { @extend %foto-pp; }
 }
 
 .start-pp {
@@ -12,15 +15,50 @@
     align-items: start;
     justify-content: space-evenly;
     align-content: space-around;
-    overflow: hidden;
+    // overflow: hidden;
     margin: 1.25rem;
     padding: 1.25rem;
+    gap: 1.5rem;
+    img { @extend %foto-pp; }
 }
 
-.columna-pp {
-    @extend %flex-pp;
-    flex-direction: column;
-    img { @extend %foto-pp; }
+// TARJETA BBVA
+.tarjeta-contenedor {
+    display: flex;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    gap: 1.5rem; // Espacio entre los elementos
+    .tarjeta-izquierda {
+        width: calc(50% - 0.75rem); // 50% del ancho del contenedor menos la mitad del espacio entre los elementos
+        gap: 1.5rem; // Espacio entre los elementos internos
+
+        img {
+            @extend %foto-pp;
+            max-height: calc(50% + 0.75rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
+        }
+    }
+
+    .tarjeta-derecha {
+        width: calc(50% - .75rem); // 50% del ancho del contenedor menos la mitad del espacio entre los elementos
+        @extend %columna-pp;
+        gap: 1.5rem; // Espacio entre los elementos internos
+
+        .tarjeta-arriba, .tarjeta-abajo {
+            display: flex;
+            width: 100%;
+            height: calc(50% - .75rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
+            img {
+                height: auto;                
+                width: 33%;
+                margin: 1.25rem;
+                padding: 1.25rem;
+            }
+        }
+    }
+    h5, p {
+        margin: .5rem;
+        padding: .5rem;
+    }
 }
 
 
