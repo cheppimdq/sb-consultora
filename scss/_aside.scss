@@ -1,3 +1,27 @@
+
+.botonera-pp {
+    height: 21vh;
+    @extend %flex-pp;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: .75rem;
+    .boton-pp {
+        background-color: map-get($color-pp, blanco-1); // ACA VA EL MISMO COLOR QUE EL FONDO NEGRO !!!
+        @extend %columna-pp;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        i {
+            font-size: 2rem;
+            margin: 1.25rem;
+            padding: 1.25rem;
+        }
+    }
+}
+
+
+
 .mapa-pp {
     @extend %foto-pp;
     height: 66vh;

@@ -21,8 +21,8 @@
     justify-content: space-evenly;
     align-content: space-around;
     // overflow: hidden;
-    margin: 1.25rem;
-    padding: 1.25rem;
+    margin: .75rem;
+    padding: .75rem;
     gap: 1.5rem;
     img { @extend %foto-pp; }
 }
@@ -30,37 +30,26 @@
 // TARJETA BBVA
 .tarjeta-contenedor {
     display: flex;
-    margin: 1.25rem;
-    padding: 1.25rem;
-    gap: 1.5rem; // Espacio entre los elementos
+    gap: 1rem; // Espacio entre los elementos
     .tarjeta-izquierda {
-        width: calc(50% - 0.75rem); // 50% del ancho del contenedor menos la mitad del espacio entre los elementos
-        gap: 1.5rem; // Espacio entre los elementos internos
-
         img {
             @extend %foto-pp;
-            max-height: calc(50% + 0.75rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
+            max-height: calc(50% + 0.5rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
         }
     }
-
     .tarjeta-derecha {
-        width: calc(50% - .75rem); // 50% del ancho del contenedor menos la mitad del espacio entre los elementos
         @extend %columna-pp;
-        gap: 1.5rem; // Espacio entre los elementos internos
 
+        gap: 1rem; // Espacio entre los elementos internos
         .tarjeta-arriba, .tarjeta-abajo {
-            display: flex;
             width: 100%;
-            height: calc(50% - .75rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
-            img {
-                margin: .5rem;
-                padding: .5rem;
-            }
+            height: calc(50% - .5rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
+            img { @extend %foto-pp; }
         }
     }
     h5, p {
-        margin: .5rem;
-        padding: .5rem;
+        margin: .25rem;
+        padding: .25rem;
     }
 }
 
@@ -70,14 +59,13 @@
     justify-content: space-between; // Queda perfecto !!!
     align-items: center;
     overflow-x: hidden; // esto va aca por que es un contenedor de una animacion AOS
-    margin: .75rem;
-    padding: .75rem;
 
     .foto-profesional {
         position: relative;
         @extend %flex-pp;
         justify-content: center; // Queda perfecto !!!
         align-items: center;
+
         img { @extend %foto-pp; }
         .link-blanco  {
             position: absolute;
